@@ -1,2 +1,8 @@
-//this is for wheat
-let wheat = "";
+export const createWheat = () => {
+    return {
+        type: "Wheat",
+        height: 230,
+        output: 6
+    }
+}
+
