@@ -1,14 +1,23 @@
-<<<<<<< Updated upstream
 import { createPlan } from "./plan.js";
-console.log("Welcome to the main module");
+import { createCorn } from "./seeds/corn.js";
+import { createPotato } from "./seeds/potato.js";
+import { createAsparagus } from "./seeds/asparagus.js";
+import { createSoybean } from "./seeds/soybean.js";
+import { createSunflower } from "./seeds/sunflower.js";
+import { createWheat } from "./seeds/wheat.js";
 //import and invoke createPlan() from plan.js module
 const yearlyPlan = createPlan();
-=======
-import { createPlan } from "./plan.js"
 
-const yearlyPlan = createPlan()
-
-console.log("Welcome to the main module")
-
-console.log(yearlyPlan)
->>>>>>> Stashed changes
+const cornSeed = createCorn();
+const potatoSeed = createPotato();
+const asparagusSeed = createAsparagus();
+const soybeanSeed = createSoybean();
+const sunflowerSeed = createSunflower();
+const wheatSeed = createWheat();
+console.log(cornSeed);
+console.log(potatoSeed);
+console.log(asparagusSeed);
+console.log(soybeanSeed);
+console.log(sunflowerSeed);
+console.log(wheatSeed);
+console.log("Welcome to the main module");
