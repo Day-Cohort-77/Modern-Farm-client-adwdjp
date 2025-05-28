@@ -8,6 +8,7 @@ import { createWheat } from "./seeds/wheat.js";
 
 const yearlyPlan = createPlan();
 
+
 const cornSeed = createCorn();
 const potatoSeed = createPotato();
 const asparagusSeed = createAsparagus();

@@ -1,3 +1,4 @@
+
 export const createPotato = () => {
     return {
         type: "Potato",
@@ -5,3 +6,4 @@ export const createPotato = () => {
         output: 2
     }
 }
+
