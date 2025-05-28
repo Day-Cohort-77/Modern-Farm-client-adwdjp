@@ -1,4 +1,3 @@
-//this is for potato
 export const createPotato = () => {
     return {
         type: "Potato",

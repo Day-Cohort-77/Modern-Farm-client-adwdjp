@@ -1,4 +1,3 @@
-//this is for sunflower
 export const createSunflower = () => {
     return {
         type: "Sunflower",

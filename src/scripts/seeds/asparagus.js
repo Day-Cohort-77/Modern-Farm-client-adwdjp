@@ -1,4 +1,3 @@
-//this is for asparagus
 export const createAsparagus = () => {
     return {
         type: "Asparagus",
