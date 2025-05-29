@@ -1,11 +1,13 @@
+import { addPlants, usePlants } from "./field.js"
 // define and export a harvestPlants function
-export const harvestPlants = (plants) => {
+export const harvestPlants = () => {
 // the function harvestPlants must accept the plants 
 // array as an argument.
 // the function will return an array of seed objects
 // iterate the array of growing plants. on each 
 // plant object, get the value of the output property
 const harvestedPlants = []
+const plants = usePlants()
     for (const plant of plants) {
         if (plant.type === "Corn") {
             for (let i = 0; i < (plant.output / 2); i++) {
