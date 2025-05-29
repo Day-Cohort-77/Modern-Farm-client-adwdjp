@@ -6,6 +6,7 @@ import { createSoybean } from "./seeds/soybean.js";
 import { createSunflower } from "./seeds/sunflower.js";
 import { createWheat } from "./seeds/wheat.js";
 import { addPlants, usePlants } from "./field.js";
+import { harvestPlants } from "./harvester.js";
 
 const yearlyPlan = createPlan();
 
@@ -27,3 +28,7 @@ console.log("Welcome to the main module");
 addPlants(potatoSeed);
 const usePlant = usePlants();
 console.log(usePlant);
+
+console.log("Yearly Plan:", yearlyPlan);
+console.log(harvestPlants);
+
