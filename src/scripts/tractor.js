@@ -4,7 +4,7 @@ import { createAsparagus } from "./seeds/asparagus.js";
 import { createSoybean } from "./seeds/soybean.js";
 import { createSunflower } from "./seeds/sunflower.js";
 import { createWheat } from "./seeds/wheat.js";
-import { addPlant } from "./field.js";
+import { addPlants } from "./field.js";
 
 export const plantSeeds = (yearlyPlan) => {
     for (const row of yearlyPlan) {
@@ -30,13 +30,7 @@ export const plantSeeds = (yearlyPlan) => {
                     seed = createWheat();
                     break;
             }
-            
-            // Special handling for corn, which returns an array
-            if (Array.isArray(seed)) {
-                seed.forEach(cornSeed => addPlant(cornSeed));
-            } else {
-                addPlant(seed);
-            }
+            addPlants(seed);
         }
     }
 };
