@@ -1,36 +1,62 @@
-@import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
-
-/*Typography
---------------------------------------------------------------*/
-body,
-button,
-input,
-select,
-textarea {
-	color: #404040;
-	font-family: "Comfortaa", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 1.5;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: "Patua One", serif;
-  letter-spacing: 2px;
+.container {
+    max-width: fit-content;
+    margin: 0 auto;
+    display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(10, 1fr);
+grid-column-gap: 20px;
+grid-row-gap: 20px;
+    
 }
 
-.blue {
-    background-color: aliceblue;
+.plant-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
 }
 
-.green {
-    background-color: darkseagreen;
+.plant {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+    justify-content:center;
+    flex-direction:row
 }
 
-.purple {
-    background-color: mediumorchid;
+.plant:hover {
+    transform: scale(1.05);
 }
 
-.red {
-    background-color: darksalmon;
+.plant img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
+.plant-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.plant-details {
+    font-size: 0.9em;
+    color: #666;
+}
